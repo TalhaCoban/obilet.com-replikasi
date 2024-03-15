@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root {
+    --red: rgb(210, 59, 56);
+    --gray: #C7C8CC;
+    --dark-gray: rgb(104, 93, 110);
+}
+
+.bg-red {background-color: var(--red);}
+.font-red {color: var(--red);}
+.font-white {color: white}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    margin: 0 0 400px;
+    padding: 0;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 59%;
+    height: 72px;
+    margin: 0 auto;
+}
+
+#home .home-text {
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#nav-links .nav-link-item {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 0 1.5rem;
+}
+
+#nav-links .left-br {
+    border-left: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#sub-navbar {
+    position: fixed;
+    width: 100%;
+    top: 72px;
+    background-color: white;
+}
+
+#sub-navbar .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 62%;
+    height: 63px;
+    margin: 0 auto;
+}
+
+#sub-navbar .container a.sub-nav-link-item {
+    text-decoration: none;
+    display: inline-block;
+    padding: 9px 20px;
+    margin: 0 0.9rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    border: 1px solid var(--gray);
+    border-radius: 20px;
+}
+
+#sub-navbar .container a.sub-nav-link-item span {
+    margin-left: 3px;
+    color: black;
+}
+
+#sub-navbar .container a.sub-nav-link-item:hover {
+    border: 1px solid var(--red);
+    color: var(--red);
+    transition: border 0.3s, color 0.3s;
+}
+
+#sub-navbar .container a.main-link-item {
+    text-decoration: none;
+    display: inline-block;
+    padding: 9px 20px;
+    margin: 0 0.9rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    border: 1px solid var(--red);
+    border-radius: 20px;
+    background-color: var(--red);
+}
+
+#sub-navbar .container a.main-link-item span {
+    border: 1px solid var(--red);
+    border-radius: 20px;
+    background-color: var(--red);
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 62%;
+    margin: auto;
+}
+
+#ticket {
+    margin-top: 138px;
+    width: 100%;
+    height: 390px;
+    background-image: url("./img/bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#ticket .container .right-row {
+    background-color: white;
+    width: 437px;
+    height: 325px;
+    border-radius: 8px;
+    margin: 30px 10px 35px;
+}
+
+#ticket .container .left-row {
+    width: 570px;
+    height: 325px;
+    border-radius: 8px;
+    margin: 30px 10px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.left-row h1 {
+    font-size: 2.6rem;
+    margin: 0;
+}
+
+.left-row h1 span {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.left-row div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px 17px;
+}
+
+.left-row .inner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    height: 132px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+    border-radius: 12px;
+}
+
+.left-row .inner-card img {
+    width: 55px;
+}
+
+.left-row .inner-card span {
+    width: 160px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+#ziraat {
+    margin-top: 20px;
+}
+
+#ziraat .container img {
+    width: 94%;
+    height:  140px;
+    margin-left: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--gray);
+}
+
+header.head {
+    width: 62%;
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 17px auto 0;
+}
+
+header.head span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark-gray);
+}
+
+#infos .card {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 7px;
+}
+
+#infos .card .inner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-basis: 250px;
+    background-color: white;
+    margin: 20px 0px;
+    padding: 15px;
+    height: 280px;
+    box-shadow: 2px 0px 8px 0px rgba(0,0,0,0.10);
+}
+
+#infos .card .inner-card:hover {
+    box-shadow: 2px 0px 8px 0px rgba(0,0,0,0.25);
+    transition: box-shadow 0.2s;
+}
+
+#infos .card .inner-card h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    color: var(--dark-gray);
+    text-align: center;
+}
+
+#infos .card .inner-card span {
+    font-size: 1.3rem;
+    color: var(--dark-gray);
+    text-align: center;
+}
+
+#extra-infos {
+    margin: 20px 0;
+}
+
+#extra-infos .card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    gap: 15px;
+}
+
+#extra-infos .card-2 {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    height: 430px;
+    border-radius: 8px;
+}   
+
+#extra-infos .card-2:hover {
+    box-shadow: 2px 0px 8px 0px rgba(0,0,0,0.15);
+    transition: box-shadow 0.2s;
+}
+
+#extra-infos .card-2 * {
+    padding: 0 18px;
+}
+
+#extra-infos .card-2 span {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--dark-gray);
+}
+
+#extra-infos .card-2 .text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+
+#extra-infos .card-2 div {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#extra-infos .card-2 div .phone {
+    width: 140px;
+    align-self: flex-end;
+}
+
+#extra-infos .card-2 ul li {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--dark-gray);
+    padding: 7px;
+}
+
+#extra-infos .card-2 .mastercard {
+    width: 220px;
+}
+
+#extra-infos .card-2 div a {
+    text-decoration: none;
+    padding: 4px;
+}
+
+#extra-infos .card-2 .app-button {
+    width: 120px;
+}
+
+#cities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 62%;
+    margin: auto;
+}
+
+#cities p {
+    color: var(--dark-gray);
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0 8px;
+    border-right: 1px solid var(--gray);
+}
+
+#cities span {
+    color: var(--red);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#questions .card {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+    border-radius: 7px;
+    width: 100%;
+    padding: 12px 12px;
+}
+
+#questions .card .hidden-inner-card {
+    background-color: white;
+    padding: 0px 15px;
+    box-shadow: 2px 0px 8px 0px rgba(0,0,0,0.04);
+    border-radius: 7px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#questions .hidden-inner-card:hover {
+    box-shadow: 2px 0px 8px 0px rgba(0,0,0,0.15);
+    transition: box-shadow 0.2s;
+}
+
+#questions .hidden-inner-card a:hover {
+    cursor: pointer;
+}
+
+#questions .card .hidden-inner-card div {
+    height: 50px;
+    border-radius: 7px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#questions .card .hidden-inner-card div a {
+    padding: 10px;
+}
+
+#questions .card .hidden-inner-card div p {
+    margin: 0 0 0 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-gray);
+}
+
+#questions .card .hidden-inner-card > p {
+    margin: 0 0 8px 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+
+#questions .card .hidden-inner-card div i {
+    font-size: 1.7rem;
+    margin-right: 15px;
+    color: var(--dark-gray);
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
